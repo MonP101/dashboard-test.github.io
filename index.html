@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Admin Dashboard | Redesign</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Admin Dashboard | Redesign</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 	<div class="container">
 		<div class="navigation">
@@ -12,7 +14,7 @@
 				<li>
 					<a href="#">
 						<span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
-						<span class="title" style="font-size: 1.5em;font-weight: 500;">Brand Name</span>
+						<span class="title" style="font-size: 1.5em;font-weight: 500;">Chào Thuỷ</span>
 					</a>
 				</li>
 				<li class="hovered">
@@ -78,7 +80,7 @@
 					<img src="user.jpg">
 				</div>
 			</div>
-			
+
 			<!-- cards -->
 			<div class="cardBox">
 				<div class="card">
@@ -224,36 +226,68 @@
 					</div>
 					<table>
 						<tr>
-							<td width="60px"><div class="imgBx"><img src="img1.jpg"></div></td>
-							<td><h4>David<br><span>Italy</span></h4></td>
+							<td width="60px">
+								<div class="imgBx"><img src="img1.jpg"></div>
+							</td>
+							<td>
+								<h4>David<br><span>Italy</span></h4>
+							</td>
 						</tr>
 						<tr>
-							<td><div class="imgBx"><img src="img2.jpg"></div></td>
-							<td><h4>Muhammad<br><span>India</span></h4></td>
+							<td>
+								<div class="imgBx"><img src="img2.jpg"></div>
+							</td>
+							<td>
+								<h4>Muhammad<br><span>India</span></h4>
+							</td>
 						</tr>
 						<tr>
-							<td><div class="imgBx"><img src="img3.jpg"></div></td>
-							<td><h4>Amelia<br><span>France</span></h4></td>
+							<td>
+								<div class="imgBx"><img src="img3.jpg"></div>
+							</td>
+							<td>
+								<h4>Amelia<br><span>France</span></h4>
+							</td>
 						</tr>
 						<tr>
-							<td><div class="imgBx"><img src="img4.jpg"></div></td>
-							<td><h4>Olivia<br><span>USA</span></h4></td>
+							<td>
+								<div class="imgBx"><img src="img4.jpg"></div>
+							</td>
+							<td>
+								<h4>Olivia<br><span>USA</span></h4>
+							</td>
 						</tr>
 						<tr>
-							<td><div class="imgBx"><img src="img5.jpg"></div></td>
-							<td><h4>Amit<br><span>Japan</span></h4></td>
+							<td>
+								<div class="imgBx"><img src="img5.jpg"></div>
+							</td>
+							<td>
+								<h4>Amit<br><span>Japan</span></h4>
+							</td>
 						</tr>
 						<tr>
-							<td><div class="imgBx"><img src="img6.jpg"></div></td>
-							<td><h4>Ashraf<br><span>India</span></h4></td>
+							<td>
+								<div class="imgBx"><img src="img6.jpg"></div>
+							</td>
+							<td>
+								<h4>Ashraf<br><span>India</span></h4>
+							</td>
 						</tr>
 						<tr>
-							<td><div class="imgBx"><img src="img7.jpg"></div></td>
-							<td><h4>Diana<br><span>Malaysia</span></h4></td>
+							<td>
+								<div class="imgBx"><img src="img7.jpg"></div>
+							</td>
+							<td>
+								<h4>Diana<br><span>Malaysia</span></h4>
+							</td>
 						</tr>
 						<tr>
-							<td><div class="imgBx"><img src="img8.jpg"></div></td>
-							<td><h4>Amit<br><span>India</span></h4></td>
+							<td>
+								<div class="imgBx"><img src="img8.jpg"></div>
+							</td>
+							<td>
+								<h4>Amit<br><span>India</span></h4>
+							</td>
 						</tr>
 
 					</table>
@@ -267,7 +301,7 @@
 
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-	
+
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 	<script src="my_chart.js"></script>
 	<script>
@@ -276,20 +310,21 @@
 		let navigation = document.querySelector('.navigation');
 		let main = document.querySelector('.main');
 
-		toggle.onclick = function(){
+		toggle.onclick = function () {
 			navigation.classList.toggle('active');
 			main.classList.toggle('active');
 		}
 
 		// add hovered class in selected list item
 		let list = document.querySelectorAll('.navigation li');
-		function activeLink(){
+		function activeLink() {
 			list.forEach((item) =>
-			item.classList.remove('hovered'));
+				item.classList.remove('hovered'));
 			this.classList.add('hovered');
 		}
-		list.forEach((item) => 
-		item.addEventListener('mouseover',activeLink));
+		list.forEach((item) =>
+			item.addEventListener('mouseover', activeLink));
 	</script>
 </body>
+
 </html>
